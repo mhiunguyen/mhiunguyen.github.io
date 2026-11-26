@@ -258,23 +258,32 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* =====================
-   CHAPTER 2: ECOBACK FEATURED STORY
+   CHAPTER 2: ECOBACK ESSAY STORY
 ======================== */
-.featured-story {
+.essay-card {
   background: var(--white);
-  border: 1.5px solid var(--black);
+  border: 1px solid var(--gray-200);
   border-radius: var(--radius);
-  padding: 36px;
+  padding: 40px;
   box-shadow: var(--shadow);
 }
 
-.featured-top {
+.essay-meta-bar {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  padding-bottom: 28px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.essay-meta-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .project-tag {
@@ -286,15 +295,9 @@ a { text-decoration: none; color: inherit; }
   border: 1px solid var(--gray-200);
   display: inline-block;
   padding: 4px 12px; border-radius: 999px;
-  margin-bottom: 12px;
 }
 
-.featured-top h3 {
-  font-size: 20px; font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.project-role {
+.essay-role {
   font-family: var(--font-mono);
   font-size: 13px; color: var(--gray-600);
 }
@@ -315,40 +318,62 @@ a { text-decoration: none; color: inherit; }
   background: var(--black); color: var(--white); border-color: var(--black);
 }
 
-.featured-narrative {
-  font-size: 16px;
-  color: var(--gray-800);
-  line-height: 1.85;
-  padding-bottom: 28px;
-  margin-bottom: 28px;
-  border-bottom: 1px solid var(--gray-200);
-}
-
-.story-steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.step-item {
+.essay-chapters {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 32px;
 }
 
-.step-num {
+.essay-block {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.essay-block-num {
   font-family: var(--font-mono);
-  font-size: 12px; font-weight: 700;
+  font-size: 13px;
+  font-weight: 700;
   color: var(--gray-400);
+  padding-top: 4px;
 }
 
-.step-item h4 {
-  font-size: 14.5px; font-weight: 600;
+.essay-block-content h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.step-item p {
-  font-size: 14px; color: var(--gray-600);
-  line-height: 1.65;
+.essay-block-content p {
+  font-size: 15.5px;
+  color: var(--gray-800);
+  line-height: 1.85;
+  margin-bottom: 12px;
+}
+
+.essay-block-content p:last-child {
+  margin-bottom: 0;
+}
+
+.essay-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 28px;
+  margin-top: 32px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.tech-pill {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--gray-600);
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  padding: 4px 12px;
+  border-radius: 999px;
 }
 
 /* =====================
@@ -486,10 +511,10 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .story-grid { grid-template-columns: 1fr; gap: 28px; }
-  .story-steps { grid-template-columns: 1fr; gap: 20px; }
+  .essay-card { padding: 24px; }
+  .essay-block { grid-template-columns: 1fr; gap: 6px; }
   .skills-grid { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 4px; }
-  .featured-story { padding: 24px; }
 }
 
 /* =====================
