@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nguyen Minh Hieu | Data Analyst</title>
+  <title>Nguyen Minh Hieu | Data Analyst Story</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -13,82 +14,138 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
-      <span class="nav-logo">Minh Hieu</span>
+      <a href="#" class="nav-logo">mhiunguyen_</a>
       <ul class="nav-links">
-        <li><a href="#about"   data-en="About"    data-vi="Về Mình">About</a></li>
-        <li><a href="#skills"  data-en="Skills"   data-vi="Kỹ Năng">Skills</a></li>
-        <li><a href="#projects"data-en="Projects" data-vi="Dự Án">Projects</a></li>
-        <li><a href="#awards"  data-en="Awards"   data-vi="Giải Thưởng">Awards</a></li>
-        <li><a href="#contact" data-en="Contact"  data-vi="Liên Hệ">Contact</a></li>
+        <li><a href="#chapter-1" data-en="01. Origin"     data-vi="01. Khởi Đầu">01. Origin</a></li>
+        <li><a href="#chapter-2" data-en="02. EcoBack"    data-vi="02. EcoBack">02. EcoBack</a></li>
+        <li><a href="#chapter-3" data-en="03. Toolkit"    data-vi="03. Hành Trang">03. Toolkit</a></li>
+        <li><a href="#chapter-4" data-en="04. Milestones" data-vi="04. Dấu Mốc">04. Milestones</a></li>
+        <li><a href="#epilogue"  data-en="05. Next"       data-vi="05. Tiếp Theo">05. Next</a></li>
       </ul>
       <div class="lang-toggle">
         <button class="lang-btn active" onclick="setLang('en')">EN</button>
-        <span>|</span>
+        <span>/</span>
         <button class="lang-btn" onclick="setLang('vi')">VI</button>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- PROLOGUE / HERO -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-badge" data-en="🎓 Final-Year MIS Student · Ho Chi Minh City" data-vi="🎓 Sinh viên MIS năm cuối · TP. Hồ Chí Minh">🎓 Final-Year MIS Student · Ho Chi Minh City</div>
+      <div class="chapter-label" data-en="PROLOGUE · HO CHI MINH CITY" data-vi="MỞ ĐẦU · TP. HỒ CHÍ MINH">PROLOGUE · HO CHI MINH CITY</div>
       <h1 class="hero-name">Nguyen Minh Hieu</h1>
+      <p class="hero-role" data-en="Final-Year MIS Student · Aspiring Sales Data Analyst" data-vi="Sinh viên MIS năm cuối · Định hướng Sales Data Analyst">Final-Year MIS Student · Aspiring Sales Data Analyst</p>
       <p class="hero-tagline"
-         data-en="Aspiring Sales Data Analyst — turning data into business decisions."
-         data-vi="Fresher Data Analyst — biến dữ liệu thành quyết định kinh doanh.">
-        Aspiring Sales Data Analyst — turning data into business decisions.
+         data-en="Every dataset has a story waiting to be understood. Here is mine — from learning how systems work, to building an award-winning circular economy model, to turning numbers into business decisions."
+         data-vi="Mỗi tập dữ liệu đều ẩn chứa một câu chuyện chờ được lắng nghe. Và đây là câu chuyện của mình — từ việc tìm hiểu cách hệ thống vận hành, đến hành trình xây dựng mô hình kinh tế tuần hoàn đạt giải Quốc gia, và khát khao biến những con số thành quyết định kinh doanh.">
+        Every dataset has a story waiting to be understood. Here is mine — from learning how systems work, to building an award-winning circular economy model, to turning numbers into business decisions.
       </p>
-      <div class="hero-award-badge">
-        🏆 <span data-en="1st Prize · National SV_STARTUP VIII · Ministry of Education" data-vi="Giải Nhất · SV_STARTUP VIII Quốc gia · Bộ GD&ĐT">1st Prize · National SV_STARTUP VIII · Ministry of Education</span>
-      </div>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary" data-en="View Projects" data-vi="Xem Dự Án">View Projects</a>
-        <a href="#contact"  class="btn btn-outline"  data-en="Contact Me"   data-vi="Liên Hệ">Contact Me</a>
+        <a href="#chapter-1" class="btn btn-primary" data-en="Read My Story ↓" data-vi="Đọc Câu Chuyện ↓">Read My Story ↓</a>
+        <a href="#epilogue"  class="btn btn-outline"  data-en="Connect"         data-vi="Kết Nối">Connect</a>
       </div>
     </div>
-    <div class="hero-scroll">↓</div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
+  <!-- CHAPTER 1: THE FOUNDATION -->
+  <section class="section" id="chapter-1">
     <div class="container">
-      <h2 class="section-title" data-en="About Me" data-vi="Về Mình">About Me</h2>
-      <div class="about-grid">
-        <div class="about-avatar">
-          <div class="avatar-placeholder">NMH</div>
-        </div>
-        <div class="about-content">
-          <p class="about-bio"
-             data-en="Final-year Management Information Systems student at Ho Chi Minh City Open University with academic knowledge of Data Analytics, Business Forecasting, and Supply Chain Management. Passionate about analyzing sales performance, identifying business trends, and supporting data-driven decisions. Experienced in collaborative project development and translating business requirements into operational workflows."
-             data-vi="Sinh viên năm cuối ngành Hệ thống Thông tin Quản lý tại Đại học Mở TP.HCM. Có nền tảng về Phân tích Dữ liệu, Dự báo Kinh doanh và Quản lý Chuỗi Cung ứng. Đam mê phân tích hiệu suất bán hàng, nhận diện xu hướng kinh doanh và hỗ trợ ra quyết định dựa trên dữ liệu.">
-            Final-year Management Information Systems student at Ho Chi Minh City Open University with academic knowledge of Data Analytics, Business Forecasting, and Supply Chain Management. Passionate about analyzing sales performance, identifying business trends, and supporting data-driven decisions.
+      <div class="story-header">
+        <span class="chapter-label" data-en="CHAPTER 01 · 2023 – PRESENT" data-vi="CHƯƠNG 01 · 2023 – HIỆN TẠI">CHAPTER 01 · 2023 – PRESENT</span>
+        <h2 class="section-title" data-en="Where Curiosity Met Systems & Data" data-vi="Nơi Sự Tò Mò Gặp Gỡ Hệ Thống & Dữ Liệu">Where Curiosity Met Systems &amp; Data</h2>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-prose">
+          <p data-en="In 2023, I stepped into Ho Chi Minh City Open University to study Management Information Systems (MIS). At first, I just wanted to understand how technology and business connect. Soon, I realized the bridge between them is data."
+             data-vi="Năm 2023, mình bước vào giảng đường Đại học Mở TP. Hồ Chí Minh với chuyên ngành Hệ thống Thông tin Quản lý (MIS). Ban đầu, mình chỉ tò mò muốn hiểu cách công nghệ và kinh doanh kết nối với nhau. Rồi mình nhận ra: chiếc cầu nối thực sự giữa hai thế giới ấy chính là dữ liệu.">
+            In 2023, I stepped into Ho Chi Minh City Open University to study Management Information Systems (MIS). At first, I just wanted to understand how technology and business connect. Soon, I realized the bridge between them is data.
           </p>
-          <div class="about-meta">
-            <div class="meta-item">
-              <span class="meta-icon">🎓</span>
-              <span data-en="B.Sc. Management Information Systems · HCM City Open University · 2023–Present"
-                    data-vi="Hệ thống Thông tin Quản lý · ĐH Mở TP.HCM · 2023–Nay">
-                B.Sc. Management Information Systems · HCM City Open University · 2023–Present
-              </span>
+          <p data-en="Through coursework in Data Analytics, Business Forecasting, and Supply Chain Management, I learned to look beyond isolated spreadsheets. I became fascinated by how sales performance shifts, why business trends emerge, and how clear analysis helps teams make confident decisions instead of guessing."
+             data-vi="Qua các môn học như Phân tích Dữ liệu, Dự báo Kinh doanh và Quản lý Chuỗi Cung ứng, mình học được cách nhìn xa hơn những bảng tính rời rạc. Mình bị cuốn hút bởi cách hiệu suất bán hàng biến động, lý do các xu hướng kinh doanh hình thành, và cách những phân tích mạch lạc giúp doanh nghiệp ra quyết định dựa trên cơ sở thay vì cảm tính.">
+            Through coursework in Data Analytics, Business Forecasting, and Supply Chain Management, I learned to look beyond isolated spreadsheets. I became fascinated by how sales performance shifts, why business trends emerge, and how clear analysis helps teams make confident decisions instead of guessing.
+          </p>
+        </div>
+
+        <aside class="story-card">
+          <div class="card-kicker" data-en="ACADEMIC BASE" data-vi="NỀN TẢNG HỌC VẤN">ACADEMIC BASE</div>
+          <h3>Ho Chi Minh City Open University</h3>
+          <p class="card-sub" data-en="B.Sc. in Management Information Systems (2023 – Present)" data-vi="Cử nhân Hệ thống Thông tin Quản lý (2023 – Hiện tại)">B.Sc. in Management Information Systems (2023 – Present)</p>
+          <div class="card-divider"></div>
+          <div class="card-label" data-en="Key Coursework" data-vi="Môn học trọng tâm">Key Coursework</div>
+          <ul class="card-list">
+            <li data-en="Data Analytics" data-vi="Phân tích Dữ liệu (Data Analytics)">Data Analytics</li>
+            <li data-en="Business Forecasting" data-vi="Dự báo Kinh doanh (Business Forecasting)">Business Forecasting</li>
+            <li data-en="Supply Chain Management" data-vi="Quản lý Chuỗi Cung ứng (Supply Chain)">Supply Chain Management</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 2: THE TURNING POINT (ECOBACK) -->
+  <section class="section section-alt" id="chapter-2">
+    <div class="container">
+      <div class="story-header">
+        <span class="chapter-label" data-en="CHAPTER 02 · NOV 2025 – APR 2026" data-vi="CHƯƠNG 02 · 11/2025 – 04/2026">CHAPTER 02 · NOV 2025 – APR 2026</span>
+        <h2 class="section-title" data-en="The Turning Point: Building EcoBack" data-vi="Bước Ngoặt: Hành Trình Cùng EcoBack">The Turning Point: Building EcoBack</h2>
+      </div>
+
+      <div class="featured-story">
+        <div class="featured-top">
+          <div>
+            <div class="project-tag" data-en="🏆 1ST PRIZE · NATIONAL SV_STARTUP VIII" data-vi="🏆 GIẢI NHẤT · SV_STARTUP VIII QUỐC GIA">🏆 1ST PRIZE · NATIONAL SV_STARTUP VIII</div>
+            <h3>EcoBack — Circular Packaging Return &amp; Reuse</h3>
+            <p class="project-role" data-en="4-Member Team · Business Process Analysis & Web Prototype" data-vi="Nhóm 4 thành viên · Phân tích Quy trình Nghiệp vụ & Phát triển Prototype">4-Member Team · Business Process Analysis &amp; Web Prototype</p>
+          </div>
+          <div class="project-links">
+            <a href="https://eco-ecoback-frontend.onrender.com/" target="_blank" class="btn-link">
+              <span data-en="🌐 Live Demo" data-vi="🌐 Xem Demo">🌐 Live Demo</span>
+            </a>
+            <a href="https://ou.edu.vn/tin_tuc/sv-ou-dat-giai-nhat-cuoc-thi-sv_startup-2026/" target="_blank" class="btn-link">
+              <span data-en="📰 University News" data-vi="📰 Báo ĐH Mở">📰 University News</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="featured-narrative"
+           data-en="E-commerce is booming in Vietnam, and with it comes a mountain of single-use packaging. Alongside three teammates, I asked: how can we connect businesses, consumers, and collection partners into a practical circular loop? That question took us from researching Vietnam's Extended Producer Responsibility (EPR) policy all the way to the national stage."
+           data-vi="Thương mại điện tử phát triển bùng nổ kéo theo lượng lớn bao bì dùng một lần. Cùng ba người bạn đồng hành, mình đặt câu hỏi: làm sao để kết nối doanh nghiệp, người tiêu dùng và đơn vị thu gom vào một vòng tuần hoàn khả thi? Câu hỏi đó đã đưa tụi mình đi từ việc nghiên cứu chính sách Trách nhiệm Mở rộng của Nhà sản xuất (EPR) tại Việt Nam đến sân khấu chung kết toàn quốc.">
+          E-commerce is booming in Vietnam, and with it comes a mountain of single-use packaging. Alongside three teammates, I asked: how can we connect businesses, consumers, and collection partners into a practical circular loop? That question took us from researching Vietnam's Extended Producer Responsibility (EPR) policy all the way to the national stage.
+        </p>
+
+        <div class="story-steps">
+          <div class="step-item">
+            <span class="step-num">01</span>
+            <div>
+              <h4 data-en="Problem & EPR Research" data-vi="Nghiên cứu Bài toán & EPR">Problem &amp; EPR Research</h4>
+              <p data-en="Analyzed business requirements and Vietnam's EPR framework to pinpoint real operational bottlenecks in packaging recovery."
+                 data-vi="Phân tích yêu cầu nghiệp vụ và khung pháp lý EPR tại Việt Nam để xác định điểm nghẽn thực tế trong khâu thu hồi bao bì.">
+                Analyzed business requirements and Vietnam's EPR framework to pinpoint real operational bottlenecks in packaging recovery.
+              </p>
             </div>
-            <div class="meta-item">
-              <span class="meta-icon">📚</span>
-              <span data-en="Relevant Coursework: Data Analytics · Business Forecasting · Supply Chain Management"
-                    data-vi="Môn học liên quan: Phân tích Dữ liệu · Dự báo Kinh doanh · Quản lý Chuỗi Cung ứng">
-                Relevant: Data Analytics · Business Forecasting · Supply Chain Management
-              </span>
+          </div>
+
+          <div class="step-item">
+            <span class="step-num">02</span>
+            <div>
+              <h4 data-en="End-to-End Workflow Design" data-vi="Thiết kế Quy trình Đầu cuối">End-to-End Workflow Design</h4>
+              <p data-en="Translated complex requirements into operational workflows covering packaging tracking, collection, consumer incentives, and reuse."
+                 data-vi="Chuyển hóa các yêu cầu phức tạp thành quy trình vận hành rõ ràng: theo dõi bao bì, thu gom, tích điểm ưu đãi và tái sử dụng.">
+                Translated complex requirements into operational workflows covering packaging tracking, collection, consumer incentives, and reuse.
+              </p>
             </div>
-            <div class="meta-item">
-              <span class="meta-icon">🎯</span>
-              <span data-en="Seeking: Sales Data Analyst Intern — sales-driven business environment"
-                    data-vi="Tìm kiếm: Thực tập Data Analyst — môi trường kinh doanh dựa trên dữ liệu">
-                Seeking: Sales Data Analyst Intern
-              </span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-icon">📍</span>
-              <span>Ho Chi Minh City, Vietnam</span>
+          </div>
+
+          <div class="step-item">
+            <span class="step-num">03</span>
+            <div>
+              <h4 data-en="Prototype & National Recognition" data-vi="Prototype & Giải Nhất Quốc gia">Prototype &amp; National Recognition</h4>
+              <p data-en="Contributed to documentation and built a web prototype with QR scanning & point accumulation using GitHub Copilot — winning First Prize at both university and national SV_STARTUP VIII."
+                 data-vi="Tham gia hoàn thiện tài liệu và xây dựng web prototype với tính năng quét QR, tích điểm bằng GitHub Copilot — xuất sắc giành Giải Nhất cấp trường và Giải Nhất Quốc gia SV_STARTUP VIII.">
+                Contributed to documentation and built a web prototype with QR scanning &amp; point accumulation using GitHub Copilot — winning First Prize at both university and national SV_STARTUP VIII.
+              </p>
             </div>
           </div>
         </div>
@@ -96,164 +153,117 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
+  <!-- CHAPTER 3: THE TOOLKIT -->
+  <section class="section" id="chapter-3">
     <div class="container">
-      <h2 class="section-title" data-en="Skills" data-vi="Kỹ Năng">Skills</h2>
-      <div class="skills-grid">
+      <div class="story-header">
+        <span class="chapter-label" data-en="CHAPTER 03 · THE TOOLKIT" data-vi="CHƯƠNG 03 · HÀNH TRANG KỸ NĂNG">CHAPTER 03 · THE TOOLKIT</span>
+        <h2 class="section-title" data-en="Tools I Use to Make Sense of Data" data-vi="Những Công Cụ Mình Dùng Để Đọc Hiểu Dữ Liệu">Tools I Use to Make Sense of Data</h2>
+        <p class="section-sub"
+           data-en="I'm honest about where I stand: I've built a solid academic foundation and am actively sharpening my hands-on skills every day."
+           data-vi="Mình luôn thẳng thắn về xuất phát điểm của bản thân: đã có nền tảng học thuật vững và đang chủ động trau dồi, ôn luyện thực chiến mỗi ngày.">
+          I'm honest about where I stand: I've built a solid academic foundation and am actively sharpening my hands-on skills every day.
+        </p>
+      </div>
 
+      <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-icon">🗄️</div>
-          <h3>SQL</h3>
-          <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
-          <p class="skill-tags">SELECT · JOIN · CTE · Window Functions</p>
+          <div class="skill-top">
+            <h3>SQL</h3>
+            <span class="skill-badge" data-en="Querying" data-vi="Truy vấn">Querying</span>
+          </div>
+          <p class="skill-desc" data-en="Extracting, joining, and aggregating structured data to answer business questions." data-vi="Trích xuất, kết nối và tổng hợp dữ liệu có cấu trúc để trả lời bài toán kinh doanh.">Extracting, joining, and aggregating structured data to answer business questions.</p>
+          <p class="skill-tags">SELECT · JOIN · CTE · Aggregations</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">🐍</div>
-          <h3>Python</h3>
-          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+          <div class="skill-top">
+            <h3>Python</h3>
+            <span class="skill-badge" data-en="Analysis" data-vi="Phân tích">Analysis</span>
+          </div>
+          <p class="skill-desc" data-en="Data cleaning, manipulation, and exploratory analysis with core data libraries." data-vi="Làm sạch, xử lý và phân tích khám phá dữ liệu với các thư viện chuẩn.">Data cleaning, manipulation, and exploratory analysis with core data libraries.</p>
           <p class="skill-tags">Pandas · NumPy · Matplotlib · Seaborn</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">📊</div>
-          <h3>Excel / Google Sheets</h3>
-          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-          <p class="skill-tags">PivotTable · VLOOKUP · Charts · Data Validation</p>
+          <div class="skill-top">
+            <h3>Excel / Sheets</h3>
+            <span class="skill-badge" data-en="Reporting" data-vi="Báo cáo">Reporting</span>
+          </div>
+          <p class="skill-desc" data-en="Building quick summaries, pivot analyses, and structured operational trackers." data-vi="Tổng hợp nhanh, phân tích PivotTable và lập bảng theo dõi vận hành.">Building quick summaries, pivot analyses, and structured operational trackers.</p>
+          <p class="skill-tags">PivotTable · Lookup · Formulas · Charts</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">📈</div>
-          <h3>Power BI</h3>
-          <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
-          <p class="skill-tags">Dashboard · DAX · Data Modeling</p>
+          <div class="skill-top">
+            <h3 data-en="Business Analysis" data-vi="Phân Tích Nghiệp Vụ">Business Analysis</h3>
+            <span class="skill-badge" data-en="Core Strength" data-vi="Thế mạnh">Core Strength</span>
+          </div>
+          <p class="skill-desc" data-en="Translating stakeholder requirements into clear workflows, metrics, and actionable insights." data-vi="Chuyển hóa yêu cầu kinh doanh thành quy trình, chỉ số đo lường và đề xuất cụ thể.">Translating stakeholder requirements into clear workflows, metrics, and actionable insights.</p>
+          <p class="skill-tags">Requirements · Workflow Design · Forecasting</p>
         </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🔍</div>
-          <h3 data-en="Business Analysis" data-vi="Phân Tích Kinh Doanh">Business Analysis</h3>
-          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
-          <p class="skill-tags" data-en="Requirements Analysis · Workflow Design · EPR Frameworks" data-vi="Phân tích Yêu cầu · Thiết kế Quy trình · EPR">Requirements Analysis · Workflow Design · EPR Frameworks</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🤝</div>
-          <h3 data-en="Collaboration & Tools" data-vi="Cộng tác & Công cụ">Collaboration & Tools</h3>
-          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-          <p class="skill-tags">GitHub · GitHub Copilot · Agile Teamwork</p>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
+  <!-- CHAPTER 4: MILESTONES -->
+  <section class="section section-alt" id="chapter-4">
     <div class="container">
-      <h2 class="section-title" data-en="Projects" data-vi="Dự Án">Projects</h2>
-      <div class="projects-grid">
+      <div class="story-header">
+        <span class="chapter-label" data-en="CHAPTER 04 · MILESTONES" data-vi="CHƯƠNG 04 · NHỮNG DẤU MỐC">CHAPTER 04 · MILESTONES</span>
+        <h2 class="section-title" data-en="Moments That Kept Me Moving Forward" data-vi="Những Cột Mốc Tiếp Thêm Động Lực">Moments That Kept Me Moving Forward</h2>
+      </div>
 
-        <!-- EcoBack — REAL PROJECT -->
-        <div class="project-card project-featured">
-          <div class="project-header-row">
-            <div class="project-tag">🏆 <span data-en="1st Prize · National" data-vi="Giải Nhất · Quốc gia">1st Prize · National</span></div>
-            <div class="project-date">Nov 2025 – Apr 2026</div>
-          </div>
-          <h3>EcoBack</h3>
-          <p class="project-subtitle" data-en="Circular Packaging Return & Reuse Solution for E-commerce" data-vi="Giải pháp thu hồi & tái sử dụng bao bì vòng tròn cho thương mại điện tử">Circular Packaging Return &amp; Reuse Solution for E-commerce</p>
-          <ul class="project-bullets">
-            <li data-en="Collaborated in a 4-member team to develop a circular packaging model connecting businesses, consumers, and collection partners." data-vi="Phối hợp nhóm 4 người phát triển mô hình thu hồi bao bì kết nối doanh nghiệp, người tiêu dùng và đối tác thu gom.">Collaborated in a 4-member team to develop a circular packaging model connecting businesses, consumers, and collection partners.</li>
-            <li data-en="Analyzed Vietnam's EPR framework to identify operational challenges in packaging recovery." data-vi="Phân tích khung pháp lý EPR của Việt Nam để xác định thách thức vận hành trong thu hồi bao bì.">Analyzed Vietnam's EPR framework to identify operational challenges in packaging recovery.</li>
-            <li data-en="Designed end-to-end workflows: packaging tracking, collection, consumer incentives, and reuse processes." data-vi="Thiết kế quy trình đầu cuối: theo dõi bao bì, thu gom, ưu đãi người tiêu dùng và tái sử dụng.">Designed end-to-end workflows: packaging tracking, collection, consumer incentives, and reuse processes.</li>
-            <li data-en="Built a web prototype with QR scanning & point accumulation features using GitHub Copilot." data-vi="Xây dựng prototype web tích hợp quét QR & tích điểm bằng GitHub Copilot.">Built a web prototype with QR scanning &amp; point accumulation using GitHub Copilot.</li>
-          </ul>
-          <div class="project-tools">
-            <span>Web Prototype</span><span>GitHub Copilot</span><span>EPR Analysis</span><span>Workflow Design</span>
-          </div>
-          <div class="project-links">
-            <a href="https://eco-ecoback-frontend.onrender.com/" target="_blank" class="project-link">🌐 <span data-en="Live Demo" data-vi="Xem Demo">Live Demo</span></a>
-            <a href="https://ou.edu.vn/tin_tuc/sv-ou-dat-giai-nhat-cuoc-thi-sv_startup-2026/" target="_blank" class="project-link">📰 <span data-en="University News" data-vi="Tin ĐH">University News</span></a>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-body">
+            <h3 data-en="1st Prize — National SV_STARTUP VIII & University Level" data-vi="Giải Nhất — SV_STARTUP VIII Toàn quốc & Cấp trường">1st Prize — National SV_STARTUP VIII &amp; University Level</h3>
+            <p data-en="Awarded Certificate of Merit from the Ministry of Education and Training and Ho Chi Minh City Open University for the EcoBack project."
+               data-vi="Nhận Bằng khen của Bộ Giáo dục & Đào tạo và Trường Đại học Mở TP.HCM cho dự án EcoBack.">
+              Awarded Certificate of Merit from the Ministry of Education and Training and Ho Chi Minh City Open University for the EcoBack project.
+            </p>
           </div>
         </div>
 
-        <!-- Project 2 — Coming Soon -->
-        <div class="project-card project-placeholder">
-          <div class="project-tag">EDA · Python</div>
-          <h3 data-en="Sales Performance Analysis · Coming Soon" data-vi="Phân tích Hiệu suất Bán hàng · Sắp ra mắt">Sales Performance Analysis · Coming Soon</h3>
-          <p data-en="Exploratory data analysis on a real-world sales dataset — uncovering trends, seasonality, and revenue drivers." data-vi="Phân tích khám phá dữ liệu bán hàng thực tế — tìm xu hướng, tính thời vụ và các yếu tố tạo doanh thu.">Exploratory data analysis on a real-world sales dataset — uncovering trends, seasonality, and revenue drivers.</p>
-          <div class="project-tools"><span>Python</span><span>Pandas</span><span>Seaborn</span><span>Matplotlib</span></div>
+        <div class="timeline-item">
+          <div class="timeline-year">Oct 2026</div>
+          <div class="timeline-body">
+            <h3 data-en="Digital Entrepreneurship Foundations — UEH" data-vi="Chứng chỉ Digital Entrepreneurship Foundations — UEH">Digital Entrepreneurship Foundations — UEH</h3>
+            <p data-en="Completed under the Digital Skills to Succeed (DS2S) project by UEH in collaboration with GIZ and BMZ (Germany)."
+               data-vi="Hoàn thành chương trình thuộc dự án Kỹ năng số để Thành công (DS2S) do ĐH Kinh tế TP.HCM (UEH) phối hợp cùng GIZ & BMZ (Đức) tổ chức.">
+              Completed under the Digital Skills to Succeed (DS2S) project by UEH in collaboration with GIZ and BMZ (Germany).
+            </p>
+          </div>
         </div>
 
-        <!-- Project 3 — Coming Soon -->
-        <div class="project-card project-placeholder">
-          <div class="project-tag">SQL · Dashboard</div>
-          <h3 data-en="Business Intelligence Dashboard · Coming Soon" data-vi="Dashboard BI · Sắp ra mắt">Business Intelligence Dashboard · Coming Soon</h3>
-          <p data-en="End-to-end business problem: from raw SQL queries to Power BI dashboard with actionable recommendations." data-vi="Bài toán business đầu cuối: từ SQL queries đến Power BI dashboard với đề xuất hành động.">End-to-end: from SQL queries to a Power BI dashboard with actionable recommendations.</p>
-          <div class="project-tools"><span>SQL</span><span>Power BI</span><span>DAX</span></div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023–2026</div>
+          <div class="timeline-body">
+            <h3 data-en="Academic Encouragement Scholarship (×3 Semesters)" data-vi="Học bổng Khuyến khích Học tập (3 học kỳ)">Academic Encouragement Scholarship (×3 Semesters)</h3>
+            <p data-en="Recognized consistently for academic performance in Semester 2 (2023–2024), Semester 1 (2024–2025), and Semester 2 (2025–2026)."
+               data-vi="Đạt thành tích học tập xuất sắc liên tiếp qua HK2 (2023–2024), HK1 (2024–2025) và HK2 (2025–2026).">
+              Recognized consistently for academic performance in Semester 2 (2023–2024), Semester 1 (2024–2025), and Semester 2 (2025–2026).
+            </p>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- AWARDS -->
-  <section class="section section-alt" id="awards">
-    <div class="container">
-      <h2 class="section-title" data-en="Awards & Achievements" data-vi="Giải Thưởng & Thành Tích">Awards &amp; Achievements</h2>
-      <div class="awards-grid">
-
-        <div class="award-card">
-          <div class="award-icon">🥇</div>
-          <div class="award-content">
-            <h3 data-en="1st Prize — National SV_STARTUP VIII" data-vi="Giải Nhất — SV_STARTUP VIII Quốc gia">1st Prize — National SV_STARTUP VIII</h3>
-            <p data-en="Certificate of Merit from the Ministry of Education and Training of Vietnam." data-vi="Bằng khen của Bộ Giáo dục và Đào tạo Việt Nam.">Certificate of Merit from the Ministry of Education and Training of Vietnam.</p>
-          </div>
-        </div>
-
-        <div class="award-card">
-          <div class="award-icon">🥇</div>
-          <div class="award-content">
-            <h3 data-en="1st Prize — University Level, EcoBack Project" data-vi="Giải Nhất — Cấp trường, Dự án EcoBack">1st Prize — University Level, EcoBack Project</h3>
-            <p data-en="Certificate of Merit from Ho Chi Minh City Open University." data-vi="Bằng khen của Trường Đại học Mở TP. Hồ Chí Minh.">Certificate of Merit from Ho Chi Minh City Open University.</p>
-          </div>
-        </div>
-
-        <div class="award-card">
-          <div class="award-icon">📚</div>
-          <div class="award-content">
-            <h3 data-en="Academic Encouragement Scholarship (×3)" data-vi="Học bổng Khuyến khích Học tập (×3)">Academic Encouragement Scholarship (×3)</h3>
-            <p data-en="Awarded in Semester 2/2023–2024, Semester 1/2024–2025, and Semester 2/2025–2026." data-vi="HK2 (2023–2024), HK1 (2024–2025), HK2 (2025–2026).">Awarded in Semester 2/2023–2024, Semester 1/2024–2025, and Semester 2/2025–2026.</p>
-          </div>
-        </div>
-
-        <div class="award-card">
-          <div class="award-icon">📜</div>
-          <div class="award-content">
-            <h3 data-en="Digital Entrepreneurship Foundations" data-vi="Nền tảng Khởi nghiệp Số">Digital Entrepreneurship Foundations</h3>
-            <p data-en="University of Economics HCMC (UEH) · DS2S Project with GIZ & BMZ Germany · Oct 2026." data-vi="ĐH Kinh tế TP.HCM (UEH) · Dự án DS2S với GIZ & BMZ Đức · Tháng 10/2026.">University of Economics HCMC (UEH) · DS2S Project with GIZ &amp; BMZ Germany · Oct 2026.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
+  <!-- EPILOGUE / CONTACT -->
+  <section class="section" id="epilogue">
     <div class="container contact-container">
-      <h2 class="section-title" data-en="Let's Connect" data-vi="Kết Nối Nhé">Let's Connect</h2>
+      <span class="chapter-label" data-en="EPILOGUE · THE NEXT CHAPTER" data-vi="CHƯƠNG TIẾP THEO · SẴN SÀNG ĐỒNG HÀNH">EPILOGUE · THE NEXT CHAPTER</span>
+      <h2 class="section-title" data-en="Writing the Next Chapter Together" data-vi="Viết Tiếp Chương Mới Cùng Nhau">Writing the Next Chapter Together</h2>
       <p class="section-sub"
-         data-en="Open to Sales Data Analyst Intern opportunities in Ho Chi Minh City 👋"
-         data-vi="Sẵn sàng cho cơ hội thực tập Sales Data Analyst tại TP.HCM 👋">
-        Open to Sales Data Analyst Intern opportunities in Ho Chi Minh City 👋
+         data-en="I am looking for a Sales Data Analyst Intern role where I can apply my analytical mindset, learn from real-world sales data, and grow alongside a driven team."
+         data-vi="Mình đang tìm kiếm cơ hội Thực tập sinh Sales Data Analyst — nơi mình có thể áp dụng tư duy phân tích, học hỏi từ dữ liệu kinh doanh thực tế và phát triển cùng đội ngũ.">
+        I am looking for a Sales Data Analyst Intern role where I can apply my analytical mindset, learn from real-world sales data, and grow alongside a driven team.
       </p>
       <div class="contact-links">
         <a href="mailto:hieunm.career@gmail.com" class="contact-btn">
           <span>✉️</span> hieunm.career@gmail.com
-        </a>
-        <a href="tel:+84785906855" class="contact-btn">
-          <span>📞</span> +84 785 906 855
         </a>
         <a href="https://www.linkedin.com/in/hieunm-career/" target="_blank" class="contact-btn">
           <span>💼</span> LinkedIn
@@ -267,7 +277,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Nguyen Minh Hieu · Built with ❤️ &amp; Data</p>
+    <p>© 2026 Nguyen Minh Hieu · Ho Chi Minh City</p>
   </footer>
 
   <script src="main.js"></script>
