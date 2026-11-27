@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nguyen Minh Hieu | Portfolio</title>
+  <title>Nguyễn Minh Hiếu — Data Analyst Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
@@ -14,299 +14,454 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">mhiunguyen_</a>
+      <a href="#home" class="nav-logo">mhiunguyen_</a>
       <ul class="nav-links">
-        <li><a href="#chapter-1" data-en="01. Origin"     data-vi="01. Khởi Đầu">01. Origin</a></li>
-        <li><a href="#chapter-2" data-en="02. EcoBack"    data-vi="02. EcoBack">02. EcoBack</a></li>
-        <li><a href="#chapter-3" data-en="03. Toolkit"    data-vi="03. Hành Trang">03. Toolkit</a></li>
-        <li><a href="#chapter-4" data-en="04. Milestones" data-vi="04. Dấu Mốc">04. Milestones</a></li>
-        <li><a href="#epilogue"  data-en="05. Next"       data-vi="05. Tiếp Theo">05. Next</a></li>
+        <li><a href="#home"     data-en="01. Home"     data-vi="01. Trang chủ">01. Trang chủ</a></li>
+        <li><a href="#about"    data-en="02. About"    data-vi="02. Về mình">02. Về mình</a></li>
+        <li><a href="#projects" data-en="03. Projects" data-vi="03. Dự án">03. Dự án</a></li>
+        <li><a href="#skills"   data-en="04. Skills"   data-vi="04. Kỹ năng">04. Kỹ năng</a></li>
+        <li><a href="#journey"  data-en="05. Journey"  data-vi="05. Hành trình">05. Hành trình</a></li>
+        <li><a href="#contact"  data-en="06. Contact"  data-vi="06. Liên hệ">06. Liên hệ</a></li>
       </ul>
       <div class="lang-toggle">
-        <button class="lang-btn active" onclick="setLang('en')">EN</button>
-        <span>/</span>
         <button class="lang-btn" onclick="setLang('vi')">VI</button>
+        <span>/</span>
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
       </div>
     </div>
   </nav>
 
-  <!-- PROLOGUE / HERO -->
-  <section class="hero">
+  <!-- 01. HOME / HERO -->
+  <section class="hero" id="home">
     <div class="hero-inner">
-      <div class="chapter-label" data-en="PROLOGUE · HO CHI MINH CITY" data-vi="MỞ ĐẦU · TP. HỒ CHÍ MINH">PROLOGUE · HO CHI MINH CITY</div>
-      <h1 class="hero-name">Nguyen Minh Hieu</h1>
-      <p class="hero-role" data-en="Final-Year MIS Student · Aspiring Sales Data Analyst" data-vi="Sinh viên MIS năm cuối · Định hướng Sales Data Analyst">Final-Year MIS Student · Aspiring Sales Data Analyst</p>
-      <p class="hero-tagline"
-         data-en="Not every project that wins a prize reaches the finish line. This is my story — from studying Management Information Systems, to building EcoBack from a failed competition to a National First Prize, and learning what it truly takes to turn ideas into reality."
-         data-vi="Không phải dự án nào đạt được giải thưởng cũng đi đến đích. Đây là câu chuyện của mình — từ giảng đường Hệ thống Thông tin Quản lý, đến hành trình đưa EcoBack từ một lần thất bại đến giải Nhất Quốc gia, và những bài học thực tế phía sau ánh hào quang.">
-        Not every project that wins a prize reaches the finish line. This is my story — from studying Management Information Systems, to building EcoBack from a failed competition to a National First Prize, and learning what it truly takes to turn ideas into reality.
+      <p class="hero-greeting"
+         data-vi="Xin chào, mình là"
+         data-en="Hi, I'm">Xin chào, mình là</p>
+      <h1 class="hero-name">Nguyễn Minh Hiếu</h1>
+      <p class="hero-role"
+         data-vi="Sinh viên Hệ thống thông tin quản lý &nbsp;·&nbsp; Định hướng Data Analyst"
+         data-en="Management Information Systems Student &nbsp;·&nbsp; Aspiring Data Analyst">
+        Sinh viên Hệ thống thông tin quản lý &nbsp;·&nbsp; Định hướng Data Analyst
+      </p>
+      <p class="hero-tagline">Turning Data into Insights, and Insights into Decisions.</p>
+      <p class="hero-bio"
+         data-vi="Mình quan tâm đến việc khai thác dữ liệu, khám phá những thông tin có giá trị và sử dụng kết quả phân tích để hỗ trợ giải quyết các vấn đề trong kinh doanh. Mình đang từng bước phát triển năng lực phân tích dữ liệu thông qua học tập, dự án cá nhân và tìm kiếm trải nghiệm làm việc thực tế."
+         data-en="I am interested in extracting data, uncovering meaningful insights, and using analysis to support real business problem-solving. I am gradually building my data analytics capabilities through learning, personal projects, and seeking hands-on work experience.">
+        Mình quan tâm đến việc khai thác dữ liệu, khám phá những thông tin có giá trị và sử dụng kết quả phân tích để hỗ trợ giải quyết các vấn đề trong kinh doanh. Mình đang từng bước phát triển năng lực phân tích dữ liệu thông qua học tập, dự án cá nhân và tìm kiếm trải nghiệm làm việc thực tế.
       </p>
       <div class="hero-cta">
-        <a href="#chapter-2" class="btn btn-primary" data-en="Read the EcoBack Story" data-vi="Đọc Câu Chuyện EcoBack">Read the EcoBack Story</a>
-        <a href="#epilogue"  class="btn btn-outline"  data-en="Connect"                data-vi="Kết Nối">Connect</a>
+        <a href="#projects" class="btn btn-primary"
+           data-vi="Xem dự án" data-en="View Projects">Xem dự án</a>
+        <a href="#contact"  class="btn btn-outline"
+           data-vi="Kết nối" data-en="Connect">Kết nối</a>
       </div>
     </div>
   </section>
 
-  <!-- CHAPTER 1: THE FOUNDATION -->
-  <section class="section" id="chapter-1">
+  <!-- 02. ABOUT -->
+  <section class="section section-alt" id="about">
     <div class="container">
-      <div class="story-header">
-        <span class="chapter-label" data-en="CHAPTER 01 · 2023 – PRESENT" data-vi="CHƯƠNG 01 · 2023 – HIỆN TẠI">CHAPTER 01 · 2023 – PRESENT</span>
-        <h2 class="section-title" data-en="Where Curiosity Met Systems & Data" data-vi="Nơi Sự Tò Mò Gặp Gỡ Hệ Thống & Dữ Liệu">Where Curiosity Met Systems &amp; Data</h2>
-      </div>
+      <div class="section-label"
+           data-vi="02 / Giới thiệu bản thân"
+           data-en="02 / About Me">02 / Giới thiệu bản thân</div>
+      <h2 class="section-title"
+          data-vi="Về mình"
+          data-en="About Me">Về mình</h2>
 
-      <div class="story-grid">
-        <div class="story-prose">
-          <p data-en="In 2023, I stepped into Ho Chi Minh City Open University to study Management Information Systems (MIS). At first, I simply wanted to understand how technology and business connect. Soon, I realized the bridge between them is data."
-             data-vi="Năm 2023, mình bước vào giảng đường Đại học Mở TP. Hồ Chí Minh với chuyên ngành Hệ thống Thông tin Quản lý (MIS). Ban đầu, mình chỉ tò mò muốn hiểu cách công nghệ và kinh doanh kết nối với nhau. Rồi mình nhận ra: chiếc cầu nối thực sự giữa hai thế giới ấy chính là dữ liệu.">
-            In 2023, I stepped into Ho Chi Minh City Open University to study Management Information Systems (MIS). At first, I simply wanted to understand how technology and business connect. Soon, I realized the bridge between them is data.
+      <div class="about-layout">
+        <div class="about-prose">
+          <p data-vi="Mình thích cảm giác chứng minh bản thân thông qua những gì mình thực sự làm được."
+             data-en="I enjoy proving myself through what I can actually accomplish.">
+            Mình thích cảm giác chứng minh bản thân thông qua những gì mình thực sự làm được.
           </p>
-          <p data-en="Through coursework in Data Analytics, Business Forecasting, and Supply Chain Management, I learned to look beyond isolated spreadsheets. I became fascinated by how sales performance shifts, why business trends emerge, and how clear analysis helps teams make confident decisions instead of guessing."
-             data-vi="Qua các môn học như Phân tích Dữ liệu, Dự báo Kinh doanh và Quản lý Chuỗi Cung ứng, mình học được cách nhìn xa hơn những bảng tính rời rạc. Mình bị cuốn hút bởi cách hiệu suất bán hàng biến động, lý do các xu hướng kinh doanh hình thành, và cách những phân tích mạch lạc giúp doanh nghiệp ra quyết định dựa trên cơ sở thay vì cảm tính.">
-            Through coursework in Data Analytics, Business Forecasting, and Supply Chain Management, I learned to look beyond isolated spreadsheets. I became fascinated by how sales performance shifts, why business trends emerge, and how clear analysis helps teams make confident decisions instead of guessing.
+          <p data-vi="Trước đây, mình từng tìm kiếm cảm giác chiến thắng trong thế giới game. Nhưng theo thời gian, mình muốn thử sức ở một sân chơi có giá trị thực tế hơn — nơi những nỗ lực và năng lực của bản thân có thể tạo ra kết quả cụ thể. Mình tìm thấy cơ hội đó trong lĩnh vực công nghệ và dữ liệu."
+             data-en="In the past, I sought that feeling of winning in games. Over time, I wanted to test myself in an arena with real-world impact — where effort and ability produce tangible results. I found that opportunity in technology and data.">
+            Trước đây, mình từng tìm kiếm cảm giác chiến thắng trong thế giới game. Nhưng theo thời gian, mình muốn thử sức ở một sân chơi có giá trị thực tế hơn — nơi những nỗ lực và năng lực của bản thân có thể tạo ra kết quả cụ thể. Mình tìm thấy cơ hội đó trong lĩnh vực công nghệ và dữ liệu.
+          </p>
+          <p data-vi="Trong quá trình học tập, mình từng cùng đội ngũ đạt giải Nhất ở cả cấp trường và cấp quốc gia tại các cuộc thi khởi nghiệp. Bên cạnh đó, mình có nền tảng Toán học khá tốt và hứng thú với việc tìm hiểu, giải quyết vấn đề."
+             data-en="During my studies, I collaborated with a team to win First Prize at both university and national startup competitions. I also have a solid Mathematics foundation and a genuine interest in exploring and solving problems.">
+            Trong quá trình học tập, mình từng cùng đội ngũ đạt giải Nhất ở cả cấp trường và cấp quốc gia tại các cuộc thi khởi nghiệp. Bên cạnh đó, mình có nền tảng Toán học khá tốt và hứng thú với việc tìm hiểu, giải quyết vấn đề.
+          </p>
+          <p data-vi="Tuy nhiên, mình nhận ra kiến thức chuyên môn và công cụ chỉ là một phần. Điều mình muốn phát triển hơn là khả năng đặt câu hỏi đúng, phân tích vấn đề có cấu trúc và tự xây dựng hướng giải quyết. Mình đang tìm hiểu những phương pháp tư duy như MECE, đồng thời rèn luyện thông qua các bài toán và tình huống thực tế. Mình muốn có thể tự suy nghĩ và đưa ra lập luận của riêng mình, thay vì phụ thuộc vào việc để công cụ nghĩ hộ."
+             data-en="However, I've realized that domain knowledge and tools are only part of the picture. What I want to develop more is the ability to ask the right questions, structure my analysis, and independently build a path to solutions. I've been studying thinking frameworks like MECE while practicing through real-world cases — training myself to reason through problems on my own terms, rather than letting tools do the thinking for me.">
+            Tuy nhiên, mình nhận ra kiến thức chuyên môn và công cụ chỉ là một phần. Điều mình muốn phát triển hơn là khả năng đặt câu hỏi đúng, phân tích vấn đề có cấu trúc và tự xây dựng hướng giải quyết. Mình đang tìm hiểu những phương pháp tư duy như MECE, đồng thời rèn luyện thông qua các bài toán và tình huống thực tế. Mình muốn có thể tự suy nghĩ và đưa ra lập luận của riêng mình, thay vì phụ thuộc vào việc để công cụ nghĩ hộ.
+          </p>
+          <p data-vi="Mình chưa xem Data Analytics là đích đến cuối cùng trong sự nghiệp. Thay vì vội vàng lựa chọn một con đường khi chưa thực sự hiểu nó, mình chọn cách trải nghiệm: học kiến thức nền tảng, thực hiện các dự án cá nhân và tìm kiếm cơ hội thực tập để tiếp xúc với công việc thực tế. Mình tin rằng những trải nghiệm đó sẽ giúp mình hiểu rõ hơn về năng lực, sở thích và hướng phát triển phù hợp với bản thân."
+             data-en="I don't yet see Data Analytics as my final career destination. Rather than rushing into a fixed path before truly understanding it, I've chosen to explore: building foundational skills, working on personal projects, and seeking internship opportunities to experience real-world work firsthand. I believe these experiences will help me understand my own strengths, interests, and the right direction to grow.">
+            Mình chưa xem Data Analytics là đích đến cuối cùng trong sự nghiệp. Thay vì vội vàng lựa chọn một con đường khi chưa thực sự hiểu nó, mình chọn cách trải nghiệm: học kiến thức nền tảng, thực hiện các dự án cá nhân và tìm kiếm cơ hội thực tập để tiếp xúc với công việc thực tế. Mình tin rằng những trải nghiệm đó sẽ giúp mình hiểu rõ hơn về năng lực, sở thích và hướng phát triển phù hợp với bản thân.
           </p>
         </div>
 
-        <aside class="story-card">
-          <div class="card-kicker" data-en="ACADEMIC BASE" data-vi="NỀN TẢNG HỌC VẤN">ACADEMIC BASE</div>
-          <h3>Ho Chi Minh City Open University</h3>
-          <p class="card-sub" data-en="B.Sc. in Management Information Systems (2023 – Present)" data-vi="Cử nhân Hệ thống Thông tin Quản lý (2023 – Hiện tại)">B.Sc. in Management Information Systems (2023 – Present)</p>
-          <div class="card-divider"></div>
-          <div class="card-label" data-en="Key Coursework" data-vi="Môn học trọng tâm">Key Coursework</div>
-          <ul class="card-list">
-            <li data-en="Data Analytics" data-vi="Phân tích Dữ liệu (Data Analytics)">Data Analytics</li>
-            <li data-en="Business Forecasting" data-vi="Dự báo Kinh doanh (Business Forecasting)">Business Forecasting</li>
-            <li data-en="Supply Chain Management" data-vi="Quản lý Chuỗi Cung ứng (Supply Chain)">Supply Chain Management</li>
-          </ul>
+        <aside class="about-sidebar">
+          <div class="sidebar-block">
+            <div class="sidebar-label"
+                 data-vi="Hiện tại" data-en="Currently">Hiện tại</div>
+            <p data-vi="Sinh viên năm cuối, ĐH Mở TP.HCM"
+               data-en="Final-year student, HCMC Open University">Sinh viên năm cuối, ĐH Mở TP.HCM</p>
+          </div>
+          <div class="sidebar-block">
+            <div class="sidebar-label"
+                 data-vi="Đang học" data-en="Studying">Đang học</div>
+            <p data-vi="SQL · Python · Power BI · MECE Thinking"
+               data-en="SQL · Python · Power BI · MECE Thinking">SQL · Python · Power BI · MECE Thinking</p>
+          </div>
+          <div class="sidebar-block">
+            <div class="sidebar-label"
+                 data-vi="Tìm kiếm" data-en="Looking for">Tìm kiếm</div>
+            <p data-vi="Vị trí thực tập Data Analyst tại TP.HCM"
+               data-en="Data Analyst Internship in Ho Chi Minh City">Vị trí thực tập Data Analyst tại TP.HCM</p>
+          </div>
+          <div class="sidebar-block">
+            <div class="sidebar-label"
+                 data-vi="Nền tảng" data-en="Background">Nền tảng</div>
+            <p data-vi="Toán học · Hệ thống thông tin · Khởi nghiệp"
+               data-en="Mathematics · Information Systems · Startup">Toán học · Hệ thống thông tin · Khởi nghiệp</p>
+          </div>
         </aside>
       </div>
     </div>
   </section>
 
-  <!-- CHAPTER 2: ECOBACK STORY -->
-  <section class="section section-alt" id="chapter-2">
+  <!-- 03. PROJECTS -->
+  <section class="section" id="projects">
     <div class="container">
-      <div class="story-header">
-        <span class="chapter-label" data-en="CHAPTER 02 · CASE STUDY · NOV 2025 – APR 2026" data-vi="CHƯƠNG 02 · DỰ ÁN · 11/2025 – 04/2026">CHAPTER 02 · CASE STUDY · NOV 2025 – APR 2026</span>
-        <h2 class="section-title" data-en="EcoBack — From a First Failure to National First Prize" data-vi="EcoBack – Từ một lần thất bại đến giải Nhất">EcoBack — From a First Failure to National First Prize</h2>
-        <p class="section-sub"
-           data-en="Not every award-winning project reaches the finish line. EcoBack was the experience that taught me a good idea is not always a deployable real-world solution."
-           data-vi="Không phải dự án nào đạt được giải thưởng cũng đi đến đích. EcoBack là một trong những trải nghiệm giúp mình hiểu rằng, một ý tưởng tốt chưa chắc đã là một giải pháp có thể triển khai trong thực tế.">
-          Not every award-winning project reaches the finish line. EcoBack was the experience that taught me a good idea is not always a deployable real-world solution.
-        </p>
-      </div>
-
-      <article class="essay-card">
-        <div class="essay-meta-bar">
-          <div class="essay-meta-left">
-            <span class="project-tag" data-en="1ST PRIZE · NATIONAL SV_STARTUP VIII" data-vi="GIẢI NHẤT · SV_STARTUP VIII QUỐC GIA">1ST PRIZE · NATIONAL SV_STARTUP VIII</span>
-            <span class="essay-role" data-en="Full-Stack Web Prototype · Business Model & Strategy" data-vi="Phát triển Web Prototype (FE & BE) · Mô hình Kinh doanh">Full-Stack Web Prototype · Business Model &amp; Strategy</span>
-          </div>
-          <div class="project-links">
-            <a href="https://eco-ecoback-frontend.onrender.com/" target="_blank" class="btn-link" data-en="Live Demo ->" data-vi="Xem Demo ->">Live Demo -&gt;</a>
-            <a href="https://ou.edu.vn/tin_tuc/sv-ou-dat-giai-nhat-cuoc-thi-sv_startup-2026/" target="_blank" class="btn-link" data-en="University News ->" data-vi="Tin ĐH Mở ->">University News -&gt;</a>
-          </div>
-        </div>
-
-        <div class="essay-chapters">
-
-          <div class="essay-block">
-            <div class="essay-block-num">01</div>
-            <div class="essay-block-content">
-              <h3 data-en="Starting from a Failure" data-vi="Bắt đầu từ một thất bại">Starting from a Failure</h3>
-              <p data-en="My team started at the Digital Business Contest organized by VECOM, under the theme of green e-commerce. Our initial idea was to build a platform combining delivery services with a cashback mechanism through post-use packaging collection."
-                 data-vi="Nhóm mình bắt đầu với Digital Business Contest do VECOM tổ chức, với chủ đề thương mại điện tử xanh. Ý tưởng ban đầu là xây dựng một nền tảng kết hợp dịch vụ giao hàng với cơ chế hoàn tiền thông qua việc thu gom bao bì sau sử dụng.">
-                My team started at the Digital Business Contest organized by VECOM, under the theme of green e-commerce. Our initial idea was to build a platform combining delivery services with a cashback mechanism through post-use packaging collection.
-              </p>
-              <p data-en="However, we failed to advance, falling 4 points short of the threshold. One reason was that AI-generated images in our slides were not thoroughly reviewed, resulting in a zero score for that section. That was my very first lesson: never assume AI output is accurate or ready to use without verification."
-                 data-vi="Tuy nhiên, nhóm đã không vượt qua vòng thi và thiếu 4 điểm so với yêu cầu. Một trong những nguyên nhân là hình ảnh trong slide được tạo bằng AI nhưng không được kiểm soát đầy đủ, khiến phần nội dung này bị chấm 0 điểm. Đó là bài học đầu tiên của mình về việc không thể mặc định những gì AI tạo ra đều chính xác và có thể sử dụng ngay mà không cần kiểm chứng.">
-                However, we failed to advance, falling 4 points short of the threshold. One reason was that AI-generated images in our slides were not thoroughly reviewed, resulting in a zero score for that section. That was my very first lesson: never assume AI output is accurate or ready to use without verification.
-              </p>
-            </div>
-          </div>
-
-          <div class="essay-block">
-            <div class="essay-block-num">02</div>
-            <div class="essay-block-content">
-              <h3 data-en="The Journey & Pivots" data-vi="Hành trình phát triển và những thay đổi">The Journey &amp; Pivots</h3>
-              <p data-en="After that first setback, we refined the concept and entered OU Startup, winning First Prize at the university level. That achievement took us to the national finals of SV_STARTUP VIII in Hanoi, where we competed against teams nationwide and won First Prize."
-                 data-vi="Sau thất bại đầu tiên, nhóm tiếp tục hoàn thiện ý tưởng và tham gia OU Startup, giành giải Nhất cấp trường. Thành tích này đưa nhóm đến vòng chung kết cuộc thi 'Học sinh, sinh viên với ý tưởng khởi nghiệp' tại Hà Nội, nơi nhóm cạnh tranh với các đội thi đến từ nhiều trường trên cả nước và tiếp tục giành giải Nhất.">
-                After that first setback, we refined the concept and entered OU Startup, winning First Prize at the university level. That achievement took us to the national finals of SV_STARTUP VIII in Hanoi, where we competed against teams nationwide and won First Prize.
-              </p>
-              <p data-en="Along the way, EcoBack pivoted multiple times. Initially, we planned a plugin integrated into e-commerce marketplaces, but realized this made accessing data and controlling platform operations too difficult. We shifted to an independent platform grounded in Vietnam's Extended Producer Responsibility (EPR) regulation, connecting manufacturers, consumers, and collection points."
-                 data-vi="Trong quá trình đó, ý tưởng EcoBack cũng thay đổi nhiều lần. Ban đầu, nhóm định hướng phát triển một plugin tích hợp với các sàn thương mại điện tử. Tuy nhiên, nhóm nhận ra cách tiếp cận này khiến việc tiếp cận dữ liệu và kiểm soát hoạt động nền tảng trở nên khó khăn. Vì vậy, nhóm chuyển hướng sang xây dựng một nền tảng độc lập dựa trên quy định Trách nhiệm mở rộng của nhà sản xuất (EPR), hướng đến kết nối nhà sản xuất, người tiêu dùng và các điểm thu gom bao bì.">
-                Along the way, EcoBack pivoted multiple times. Initially, we planned a plugin integrated into e-commerce marketplaces, but realized this made accessing data and controlling platform operations too difficult. We shifted to an independent platform grounded in Vietnam's Extended Producer Responsibility (EPR) regulation, connecting manufacturers, consumers, and collection points.
-              </p>
-              <p data-en="On the technical side, I directly built the web application — handling both frontend and backend. I implemented QR code scanning and user reward point accumulation, used MongoDB Atlas as the database with AI assistance, and deployed the app to a live environment, while collaborating with teammates on the business model and product direction."
-                 data-vi="Về phía mình, mình trực tiếp phát triển ứng dụng web, đảm nhiệm cả frontend và backend. Những chức năng mình triển khai gồm quét mã QR và tích điểm thưởng cho người dùng. Mình sử dụng MongoDB Atlas làm cơ sở dữ liệu với sự hỗ trợ từ AI và đưa ứng dụng lên môi trường triển khai thực tế. Đối với mô hình kinh doanh và định hướng sản phẩm, mình cùng các thành viên trong nhóm tham gia thảo luận và phát triển.">
-                On the technical side, I directly built the web application — handling both frontend and backend. I implemented QR code scanning and user reward point accumulation, used MongoDB Atlas as the database with AI assistance, and deployed the app to a live environment, while collaborating with teammates on the business model and product direction.
-              </p>
-            </div>
-          </div>
-
-          <div class="essay-block">
-            <div class="essay-block-num">03</div>
-            <div class="essay-block-content">
-              <h3 data-en="Looking Back at My Answers" data-vi="Khi nhìn lại những câu trả lời của mình">Looking Back at My Answers</h3>
-              <p data-en="At the university round, a judge asked: 'If Shopee or Tiki builds a similar solution themselves, how will EcoBack compete?' At the time, I answered with first-mover advantage. Looking back, I realize we did not yet own defensible technology — partnering with e-commerce platforms would have been far more realistic than treating them as direct competitors."
-                 data-vi="Tại vòng thi cấp trường, ban giám khảo từng đặt ra một câu hỏi: Nếu Shopee hay Tiki tự phát triển một giải pháp tương tự, EcoBack sẽ cạnh tranh như thế nào? Khi đó, mình trả lời theo hướng lợi thế của người đi trước. Nhưng nhìn lại, mình nhận ra nhóm chưa sở hữu công nghệ đủ khác biệt để tạo ra lợi thế cạnh tranh bền vững. Một hướng tiếp cận thực tế hơn có lẽ là hợp tác với các nền tảng thương mại điện tử thay vì xem họ là đối thủ trực tiếp.">
-                At the university round, a judge asked: 'If Shopee or Tiki builds a similar solution themselves, how will EcoBack compete?' At the time, I answered with first-mover advantage. Looking back, I realize we did not yet own defensible technology — partnering with e-commerce platforms would have been far more realistic than treating them as direct competitors.
-              </p>
-              <p data-en="At the national finals, mentors noted the idea had potential, but the scope was too broad and we had not worked directly with key stakeholders like collection points or businesses obligated to fund packaging recovery. When asked if we would continue developing the project, I said yes — yet I began to question whether we truly had the resources to turn that commitment into reality."
-                 data-vi="Tại vòng chung kết, ban cố vấn nhận xét ý tưởng có tiềm năng nhưng phạm vi triển khai còn quá rộng. Nhóm chưa có cơ hội làm việc trực tiếp với những bên liên quan quan trọng như các điểm thu gom hay doanh nghiệp có trách nhiệm chi trả cho hoạt động thu hồi bao bì. Khi được hỏi liệu nhóm có tiếp tục phát triển dự án hay không, mình đã trả lời là có. Tuy nhiên, bản thân mình cũng bắt đầu hoài nghi về khả năng hiện thực hóa ý tưởng, bởi cam kết tiếp tục một dự án và thực sự có đủ nguồn lực để triển khai là hai chuyện khác nhau.">
-                At the national finals, mentors noted the idea had potential, but the scope was too broad and we had not worked directly with key stakeholders like collection points or businesses obligated to fund packaging recovery. When asked if we would continue developing the project, I said yes — yet I began to question whether we truly had the resources to turn that commitment into reality.
-              </p>
-            </div>
-          </div>
-
-          <div class="essay-block">
-            <div class="essay-block-num">04</div>
-            <div class="essay-block-content">
-              <h3 data-en="A Difficult Decision" data-vi="Một quyết định không dễ dàng">A Difficult Decision</h3>
-              <p data-en="About four months later, we returned to the project in UEH's incubator program. This time, we conducted market research and re-evaluated feasibility. We found existing organizations already operating with a similar direction, and looking honestly at ourselves — all still students — our experience, execution capacity, and manpower were not yet enough to build a product at the scale we envisioned."
-                 data-vi="Khoảng bốn tháng sau, nhóm quay lại với dự án trong chương trình vườn ươm của UEH. Lần này, nhóm tiến hành khảo sát thị trường và đánh giá lại tính khả thi của ý tưởng. Nhóm nhận thấy đã có những đơn vị hoạt động trong lĩnh vực có định hướng tương tự. Bên cạnh đó, khi nhìn lại nguồn lực của chính mình, tất cả thành viên đều đang là sinh viên. Kinh nghiệm, năng lực triển khai và nhân lực của nhóm chưa đủ để hoàn thiện một sản phẩm có quy mô như kỳ vọng.">
-                About four months later, we returned to the project in UEH's incubator program. This time, we conducted market research and re-evaluated feasibility. We found existing organizations already operating with a similar direction, and looking honestly at ourselves — all still students — our experience, execution capacity, and manpower were not yet enough to build a product at the scale we envisioned.
-              </p>
-              <p data-en="In the end, we decided to pause EcoBack. It was not the ending we hoped for at the beginning, but it was a necessary decision after re-examining the market and our execution capacity. EcoBack gave me unforgettable awards, and more importantly, taught me the gap between a good idea and a working model — and that knowing when to pause is just as important as knowing when to push forward."
-                 data-vi="Cuối cùng, nhóm quyết định tạm dừng EcoBack. Đây không phải kết thúc mà nhóm mong muốn ban đầu. Nhưng với mình, đó là một quyết định cần thiết sau khi nhìn nhận lại thị trường và khả năng thực thi. EcoBack không chỉ là một dự án mang về những giải thưởng đáng nhớ, mà còn là trải nghiệm giúp mình hiểu rõ hơn về khoảng cách giữa một ý tưởng tốt và một mô hình có thể vận hành trong thực tế. Đôi khi, biết khi nào cần tiếp tục và khi nào nên dừng lại cũng là một phần quan trọng của hành trình phát triển.">
-                In the end, we decided to pause EcoBack. It was not the ending we hoped for at the beginning, but it was a necessary decision after re-examining the market and our execution capacity. EcoBack gave me unforgettable awards, and more importantly, taught me the gap between a good idea and a working model — and that knowing when to pause is just as important as knowing when to push forward.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="essay-tech-row">
-          <span class="tech-pill">Frontend &amp; Backend</span>
-          <span class="tech-pill">MongoDB Atlas</span>
-          <span class="tech-pill">QR Scanning &amp; Points</span>
-          <span class="tech-pill">EPR Framework</span>
-          <span class="tech-pill">Market Validation</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- CHAPTER 3: THE TOOLKIT -->
-  <section class="section" id="chapter-3">
-    <div class="container">
-      <div class="story-header">
-        <span class="chapter-label" data-en="CHAPTER 03 · THE TOOLKIT" data-vi="CHƯƠNG 03 · HÀNH TRANG KỸ NĂNG">CHAPTER 03 · THE TOOLKIT</span>
-        <h2 class="section-title" data-en="Tools I Use to Make Sense of Data" data-vi="Những Công Cụ Mình Dùng Để Đọc Hiểu Dữ Liệu">Tools I Use to Make Sense of Data</h2>
-        <p class="section-sub"
-           data-en="I'm honest about where I stand: I've built a solid academic foundation and am actively sharpening my hands-on skills every day."
-           data-vi="Mình luôn thẳng thắn về xuất phát điểm của bản thân: đã có nền tảng học thuật vững và đang chủ động trau dồi, ôn luyện thực chiến mỗi ngày.">
-          I'm honest about where I stand: I've built a solid academic foundation and am actively sharpening my hands-on skills every day.
-        </p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-top">
-            <h3>SQL</h3>
-            <span class="skill-badge" data-en="Querying" data-vi="Truy vấn">Querying</span>
-          </div>
-          <p class="skill-desc" data-en="Extracting, joining, and aggregating structured data to answer business questions." data-vi="Trích xuất, kết nối và tổng hợp dữ liệu có cấu trúc để trả lời bài toán kinh doanh.">Extracting, joining, and aggregating structured data to answer business questions.</p>
-          <p class="skill-tags">SELECT · JOIN · CTE · Aggregations</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-top">
-            <h3>Python</h3>
-            <span class="skill-badge" data-en="Analysis" data-vi="Phân tích">Analysis</span>
-          </div>
-          <p class="skill-desc" data-en="Data cleaning, manipulation, and exploratory analysis with core data libraries." data-vi="Làm sạch, xử lý và phân tích khám phá dữ liệu với các thư viện chuẩn.">Data cleaning, manipulation, and exploratory analysis with core data libraries.</p>
-          <p class="skill-tags">Pandas · NumPy · Matplotlib · Seaborn</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-top">
-            <h3>Excel / Sheets</h3>
-            <span class="skill-badge" data-en="Reporting" data-vi="Báo cáo">Reporting</span>
-          </div>
-          <p class="skill-desc" data-en="Building quick summaries, pivot analyses, and structured operational trackers." data-vi="Tổng hợp nhanh, phân tích PivotTable và lập bảng theo dõi vận hành.">Building quick summaries, pivot analyses, and structured operational trackers.</p>
-          <p class="skill-tags">PivotTable · Lookup · Formulas · Charts</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-top">
-            <h3 data-en="Business & Product Thinking" data-vi="Tư Duy Kinh Doanh & Sản Phẩm">Business &amp; Product Thinking</h3>
-            <span class="skill-badge" data-en="Core Strength" data-vi="Thế mạnh">Core Strength</span>
-          </div>
-          <p class="skill-desc" data-en="Translating stakeholder requirements into workflows, validating market feasibility, and questioning assumptions with data." data-vi="Chuyển hóa yêu cầu nghiệp vụ thành quy trình, đánh giá tính khả thi thị trường và kiểm chứng giả định bằng dữ liệu.">Translating stakeholder requirements into workflows, validating market feasibility, and questioning assumptions with data.</p>
-          <p class="skill-tags">Requirements · Workflow Design · Feasibility</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CHAPTER 4: MILESTONES -->
-  <section class="section section-alt" id="chapter-4">
-    <div class="container">
-      <div class="story-header">
-        <span class="chapter-label" data-en="CHAPTER 04 · MILESTONES" data-vi="CHƯƠNG 04 · NHỮNG DẤU MỐC">CHAPTER 04 · MILESTONES</span>
-        <h2 class="section-title" data-en="Moments That Kept Me Moving Forward" data-vi="Những Cột Mốc Tiếp Thêm Động Lực">Moments That Kept Me Moving Forward</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-year">2026</div>
-          <div class="timeline-body">
-            <h3 data-en="1st Prize — National SV_STARTUP VIII & University Level" data-vi="Giải Nhất — SV_STARTUP VIII Toàn quốc & Cấp trường">1st Prize — National SV_STARTUP VIII &amp; University Level</h3>
-            <p data-en="Awarded Certificate of Merit from the Ministry of Education and Training and Ho Chi Minh City Open University for the EcoBack project."
-               data-vi="Nhận Bằng khen của Bộ Giáo dục & Đào tạo và Trường Đại học Mở TP.HCM cho dự án EcoBack.">
-              Awarded Certificate of Merit from the Ministry of Education and Training and Ho Chi Minh City Open University for the EcoBack project.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-year">Oct 2026</div>
-          <div class="timeline-body">
-            <h3 data-en="Digital Entrepreneurship Foundations — UEH" data-vi="Chứng chỉ Digital Entrepreneurship Foundations — UEH">Digital Entrepreneurship Foundations — UEH</h3>
-            <p data-en="Completed under the Digital Skills to Succeed (DS2S) project by UEH in collaboration with GIZ and BMZ (Germany)."
-               data-vi="Hoàn thành chương trình thuộc dự án Kỹ năng số để Thành công (DS2S) do ĐH Kinh tế TP.HCM (UEH) phối hợp cùng GIZ & BMZ (Đức) tổ chức.">
-              Completed under the Digital Skills to Succeed (DS2S) project by UEH in collaboration with GIZ and BMZ (Germany).
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-year">2023–2026</div>
-          <div class="timeline-body">
-            <h3 data-en="Academic Encouragement Scholarship (×3 Semesters)" data-vi="Học bổng Khuyến khích Học tập (3 học kỳ)">Academic Encouragement Scholarship (×3 Semesters)</h3>
-            <p data-en="Recognized consistently for academic performance in Semester 2 (2023–2024), Semester 1 (2024–2025), and Semester 2 (2025–2026)."
-               data-vi="Đạt thành tích học tập xuất sắc liên tiếp qua HK2 (2023–2024), HK1 (2024–2025) và HK2 (2025–2026).">
-              Recognized consistently for academic performance in Semester 2 (2023–2024), Semester 1 (2024–2025), and Semester 2 (2025–2026).
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EPILOGUE / CONTACT -->
-  <section class="section" id="epilogue">
-    <div class="container contact-container">
-      <span class="chapter-label" data-en="EPILOGUE · THE NEXT CHAPTER" data-vi="CHƯƠNG TIẾP THEO · SẴN SÀNG ĐỒNG HÀNH">EPILOGUE · THE NEXT CHAPTER</span>
-      <h2 class="section-title" data-en="Writing the Next Chapter Together" data-vi="Viết Tiếp Chương Mới Cùng Nhau">Writing the Next Chapter Together</h2>
+      <div class="section-label"
+           data-vi="03 / Dự án" data-en="03 / Projects">03 / Dự án</div>
+      <h2 class="section-title"
+          data-vi="Những dự án mình đã và đang thực hiện"
+          data-en="Projects I Have Built &amp; Am Building">Những dự án mình đã và đang thực hiện</h2>
       <p class="section-sub"
-         data-en="I am looking for a Sales Data Analyst Intern role where I can apply my analytical mindset, learn from real-world sales data, and grow alongside a driven team."
-         data-vi="Mình đang tìm kiếm cơ hội Thực tập sinh Sales Data Analyst — nơi mình có thể áp dụng tư duy phân tích, học hỏi từ dữ liệu kinh doanh thực tế và phát triển cùng đội ngũ.">
-        I am looking for a Sales Data Analyst Intern role where I can apply my analytical mindset, learn from real-world sales data, and grow alongside a driven team.
+         data-vi="Đây là nơi mình chia sẻ quá trình tìm hiểu vấn đề, làm việc với dữ liệu và xây dựng giải pháp thông qua các dự án thực tế."
+         data-en="This is where I share the process of understanding problems, working with data, and building solutions through real-world projects.">
+        Đây là nơi mình chia sẻ quá trình tìm hiểu vấn đề, làm việc với dữ liệu và xây dựng giải pháp thông qua các dự án thực tế.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- ECOBACK — FEATURED -->
+        <div class="project-card project-featured">
+          <div class="project-card-header">
+            <div>
+              <div class="project-status-tag"
+                   data-vi="Giải Nhất Quốc gia · SV_STARTUP VIII · 2026"
+                   data-en="National 1st Prize · SV_STARTUP VIII · 2026">
+                Giải Nhất Quốc gia · SV_STARTUP VIII · 2026
+              </div>
+              <h3>EcoBack</h3>
+              <p class="project-subtitle"
+                 data-vi="Thu hồi và tái sử dụng bao bì trong thương mại điện tử"
+                 data-en="Circular Packaging Return &amp; Reuse for E-commerce">
+                Thu hồi và tái sử dụng bao bì trong thương mại điện tử
+              </p>
+            </div>
+            <div class="project-links">
+              <a href="https://eco-ecoback-frontend.onrender.com/" target="_blank" class="btn-link"
+                 data-vi="Demo ->" data-en="Demo ->">Demo -></a>
+              <a href="https://ou.edu.vn/tin_tuc/sv-ou-dat-giai-nhat-cuoc-thi-sv_startup-2026/" target="_blank" class="btn-link"
+                 data-vi="Tin ĐH ->" data-en="News ->">Tin ĐH -></a>
+            </div>
+          </div>
+
+          <!-- INLINE STORY -->
+          <div class="project-story">
+            <div class="story-block">
+              <span class="story-num">01</span>
+              <div>
+                <h4 data-vi="Bắt đầu từ một thất bại"
+                    data-en="Starting from a Failure">Bắt đầu từ một thất bại</h4>
+                <p data-vi="Nhóm mình bắt đầu với Digital Business Contest do VECOM tổ chức. Ý tưởng là xây dựng nền tảng kết hợp giao hàng với cơ chế hoàn tiền qua thu gom bao bì. Nhóm đã không vượt qua vòng thi, thiếu 4 điểm. Một nguyên nhân là hình ảnh AI trong slide không được kiểm chứng, bị chấm 0 điểm. Đó là bài học đầu tiên của mình: không thể mặc định output của AI là chính xác mà không cần kiểm tra."
+                   data-en="We started at the Digital Business Contest by VECOM with an idea to combine delivery services and a cashback mechanism through packaging collection. We failed to advance, missing the threshold by 4 points. AI-generated images in our slides had not been verified — that section scored zero. First lesson: never assume AI output is accurate without review.">
+                  Nhóm mình bắt đầu với Digital Business Contest do VECOM tổ chức. Ý tưởng là xây dựng nền tảng kết hợp giao hàng với cơ chế hoàn tiền qua thu gom bao bì. Nhóm đã không vượt qua vòng thi, thiếu 4 điểm. Một nguyên nhân là hình ảnh AI trong slide không được kiểm chứng, bị chấm 0 điểm. Đó là bài học đầu tiên của mình: không thể mặc định output của AI là chính xác mà không cần kiểm tra.
+                </p>
+              </div>
+            </div>
+
+            <div class="story-block">
+              <span class="story-num">02</span>
+              <div>
+                <h4 data-vi="Hành trình và những lần thay đổi hướng đi"
+                    data-en="The Journey &amp; Pivots">Hành trình và những lần thay đổi hướng đi</h4>
+                <p data-vi="Sau thất bại đó, nhóm tinh chỉnh lại và tham gia OU Startup, giành giải Nhất cấp trường. Từ đó, nhóm đại diện tham gia vòng chung kết SV_STARTUP VIII tại Hà Nội và tiếp tục giành giải Nhất Quốc gia. Trong quá trình đó, ý tưởng EcoBack cũng thay đổi: từ plugin tích hợp sàn TMĐT chuyển sang nền tảng độc lập dựa trên khung pháp lý EPR (Trách nhiệm mở rộng của nhà sản xuất), kết nối nhà sản xuất, người tiêu dùng và điểm thu gom. Về phía mình, mình trực tiếp phát triển ứng dụng web (frontend và backend), triển khai QR scanning, tích điểm thưởng, sử dụng MongoDB Atlas và đưa sản phẩm lên môi trường thực tế."
+                   data-en="After the setback, we refined the concept and entered OU Startup, winning First Prize at the university level. That brought us to the national finals of SV_STARTUP VIII in Hanoi, where we won First Prize. Along the way, EcoBack pivoted: from an e-commerce plugin to a standalone platform built on Vietnam's EPR (Extended Producer Responsibility) framework, connecting manufacturers, consumers, and collection points. I personally built the full web application — frontend and backend — implementing QR scanning, reward points, MongoDB Atlas, and live deployment.">
+                  Sau thất bại đó, nhóm tinh chỉnh lại và tham gia OU Startup, giành giải Nhất cấp trường. Từ đó, nhóm đại diện tham gia vòng chung kết SV_STARTUP VIII tại Hà Nội và tiếp tục giành giải Nhất Quốc gia. Trong quá trình đó, ý tưởng EcoBack cũng thay đổi: từ plugin tích hợp sàn TMĐT chuyển sang nền tảng độc lập dựa trên khung pháp lý EPR (Trách nhiệm mở rộng của nhà sản xuất), kết nối nhà sản xuất, người tiêu dùng và điểm thu gom. Về phía mình, mình trực tiếp phát triển ứng dụng web (frontend và backend), triển khai QR scanning, tích điểm thưởng, sử dụng MongoDB Atlas và đưa sản phẩm lên môi trường thực tế.
+                </p>
+              </div>
+            </div>
+
+            <div class="story-block">
+              <span class="story-num">03</span>
+              <div>
+                <h4 data-vi="Nhìn lại những câu trả lời của mình"
+                    data-en="Revisiting My Own Answers">Nhìn lại những câu trả lời của mình</h4>
+                <p data-vi="Tại vòng cấp trường, giám khảo hỏi: Nếu Shopee hay Tiki tự làm giải pháp tương tự, EcoBack sẽ cạnh tranh như thế nào? Mình trả lời bằng lợi thế người đi trước. Nhìn lại, nhóm chưa có công nghệ đủ khác biệt. Hợp tác với các sàn thương mại điện tử sẽ thực tế hơn là xem họ là đối thủ. Tại vòng chung kết, ban cố vấn nhận xét phạm vi còn quá rộng và nhóm chưa làm việc trực tiếp với các bên liên quan thực tế như điểm thu gom hay doanh nghiệp EPR."
+                   data-en="At the university round, a judge asked: If Shopee or Tiki builds something similar, how does EcoBack compete? I answered with first-mover advantage. Looking back, we lacked defensibly differentiated technology — partnering with platforms would have been far more realistic than competing with them. At the national finals, mentors flagged our scope was too broad and we had not worked with real-world stakeholders like collection points or EPR-obligated businesses.">
+                  Tại vòng cấp trường, giám khảo hỏi: Nếu Shopee hay Tiki tự làm giải pháp tương tự, EcoBack sẽ cạnh tranh như thế nào? Mình trả lời bằng lợi thế người đi trước. Nhìn lại, nhóm chưa có công nghệ đủ khác biệt. Hợp tác với các sàn thương mại điện tử sẽ thực tế hơn là xem họ là đối thủ. Tại vòng chung kết, ban cố vấn nhận xét phạm vi còn quá rộng và nhóm chưa làm việc trực tiếp với các bên liên quan thực tế như điểm thu gom hay doanh nghiệp EPR.
+                </p>
+              </div>
+            </div>
+
+            <div class="story-block">
+              <span class="story-num">04</span>
+              <div>
+                <h4 data-vi="Một quyết định không dễ dàng"
+                    data-en="A Decision That Had to Be Made">Một quyết định không dễ dàng</h4>
+                <p data-vi="Bốn tháng sau, nhóm quay lại dự án trong chương trình vườn ươm của UEH. Qua khảo sát thị trường, nhóm nhận thấy đã có những đơn vị hoạt động trong lĩnh vực tương tự. Nhìn thẳng vào nguồn lực của nhóm — tất cả đều là sinh viên — kinh nghiệm và năng lực chưa đủ để hoàn thiện sản phẩm đúng quy mô kỳ vọng. Nhóm quyết định tạm dừng EcoBack. EcoBack không chỉ mang lại những giải thưởng đáng nhớ. Nó giúp mình hiểu khoảng cách thực sự giữa một ý tưởng tốt và một mô hình có thể vận hành. Đôi khi, biết khi nào nên dừng lại cũng là một phần của việc phát triển."
+                   data-en="Four months later, we returned to the project in UEH's incubator program. Market research revealed existing players operating in a similar space. Looking honestly at ourselves — all still students — our experience and execution capacity were not enough to build the product at the scale we envisioned. We decided to pause EcoBack. EcoBack gave us unforgettable awards, and more importantly, it taught me the real distance between a good idea and a working model. Sometimes, knowing when to stop is part of growing.">
+                  Bốn tháng sau, nhóm quay lại dự án trong chương trình vườn ươm của UEH. Qua khảo sát thị trường, nhóm nhận thấy đã có những đơn vị hoạt động trong lĩnh vực tương tự. Nhìn thẳng vào nguồn lực của nhóm — tất cả đều là sinh viên — kinh nghiệm và năng lực chưa đủ để hoàn thiện sản phẩm đúng quy mô kỳ vọng. Nhóm quyết định tạm dừng EcoBack. EcoBack không chỉ mang lại những giải thưởng đáng nhớ. Nó giúp mình hiểu khoảng cách thực sự giữa một ý tưởng tốt và một mô hình có thể vận hành. Đôi khi, biết khi nào nên dừng lại cũng là một phần của việc phát triển.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tech-row">
+            <span class="tech-pill">Frontend &amp; Backend</span>
+            <span class="tech-pill">MongoDB Atlas</span>
+            <span class="tech-pill">QR Scanning</span>
+            <span class="tech-pill">EPR Framework</span>
+            <span class="tech-pill">Market Research</span>
+          </div>
+        </div>
+
+        <!-- INCOMING PROJECTS ROW -->
+        <div class="projects-secondary">
+
+          <div class="project-card-sm">
+            <div class="project-status-tag tag-upcoming"
+                 data-vi="Sắp bắt đầu" data-en="Upcoming">Sắp bắt đầu</div>
+            <h3>Retail Demand Planning</h3>
+            <p data-vi="Phân tích nhu cầu và hoạch định tồn kho trong bán lẻ. Tìm hiểu cách dữ liệu lịch sử hỗ trợ dự báo và tối ưu hóa tồn kho."
+               data-en="Demand analysis and inventory planning in retail. Exploring how historical data supports forecasting and stock optimization.">
+              Phân tích nhu cầu và hoạch định tồn kho trong bán lẻ. Tìm hiểu cách dữ liệu lịch sử hỗ trợ dự báo và tối ưu hóa tồn kho.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-pill">Python</span><span class="tech-pill">SQL</span><span class="tech-pill">Forecasting</span>
+            </div>
+          </div>
+
+          <div class="project-card-sm">
+            <div class="project-status-tag tag-ongoing"
+                 data-vi="Đang thực hiện" data-en="In Progress">Đang thực hiện</div>
+            <h3>MerchPilot</h3>
+            <p data-vi="Phân tích dữ liệu thương mại điện tử — khám phá hành vi mua hàng, hiệu suất sản phẩm và cơ hội tối ưu doanh thu."
+               data-en="E-commerce data analysis — exploring purchasing behavior, product performance, and revenue optimization opportunities.">
+              Phân tích dữ liệu thương mại điện tử — khám phá hành vi mua hàng, hiệu suất sản phẩm và cơ hội tối ưu doanh thu.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-pill">Python</span><span class="tech-pill">Pandas</span><span class="tech-pill">EDA</span>
+            </div>
+          </div>
+
+          <div class="project-card-sm">
+            <div class="project-status-tag tag-ongoing"
+                 data-vi="Đang nghiên cứu" data-en="Researching">Đang nghiên cứu</div>
+            <h3>FraudGT</h3>
+            <p data-vi="Nghiên cứu phát hiện gian lận trong giao dịch tài chính — tìm hiểu cách mô hình hóa hành vi bất thường từ dữ liệu giao dịch."
+               data-en="Research on financial transaction fraud detection — studying how to model anomalous behavior from transaction data.">
+              Nghiên cứu phát hiện gian lận trong giao dịch tài chính — tìm hiểu cách mô hình hóa hành vi bất thường từ dữ liệu giao dịch.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-pill">Python</span><span class="tech-pill">SQL</span><span class="tech-pill">Statistics</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label"
+           data-vi="04 / Kỹ năng" data-en="04 / Skills">04 / Kỹ năng</div>
+      <h2 class="section-title"
+          data-vi="Năng lực chuyên môn"
+          data-en="Technical Skills">Năng lực chuyên môn</h2>
+
+      <div class="skills-layout">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Data Analysis</h3>
+          <ul class="skill-list">
+            <li>Data Cleaning</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Data Interpretation</li>
+            <li>Statistical Analysis</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Programming &amp; Database</h3>
+          <ul class="skill-list">
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Pandas</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Business Intelligence</h3>
+          <ul class="skill-list">
+            <li>Power BI</li>
+            <li>Data Visualization</li>
+            <li>KPI Analysis</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"
+              data-vi="Tư duy phân tích" data-en="Analytical Thinking">Tư duy phân tích</h3>
+          <ul class="skill-list">
+            <li data-vi="Giải quyết vấn đề (Problem Solving)" data-en="Problem Solving">Giải quyết vấn đề (Problem Solving)</li>
+            <li data-vi="Hiểu bối cảnh kinh doanh (Business Understanding)" data-en="Business Understanding">Hiểu bối cảnh kinh doanh (Business Understanding)</li>
+            <li data-vi="Tư duy có cấu trúc — MECE" data-en="Structured Thinking — MECE">Tư duy có cấu trúc — MECE</li>
+            <li data-vi="Phân tích yêu cầu (Requirements Analysis)" data-en="Requirements Analysis">Phân tích yêu cầu (Requirements Analysis)</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools</h3>
+          <ul class="skill-list">
+            <li>Microsoft Excel</li>
+            <li>Git &amp; GitHub</li>
+            <li>Jupyter Notebook</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 05. JOURNEY -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-label"
+           data-vi="05 / Hành trình" data-en="05 / Journey">05 / Hành trình</div>
+      <h2 class="section-title"
+          data-vi="Hành trình phát triển"
+          data-en="My Journey">Hành trình phát triển</h2>
+
+      <div class="journey-layout">
+
+        <!-- EDUCATION -->
+        <div class="journey-col">
+          <h3 class="journey-col-title"
+              data-vi="Học vấn" data-en="Education">Học vấn</h3>
+          <div class="journey-entry">
+            <div class="journey-year">2023 – nay</div>
+            <h4>Trường Đại học Mở Thành phố Hồ Chí Minh</h4>
+            <p data-vi="Hệ thống thông tin quản lý (Management Information Systems)"
+               data-en="Management Information Systems">
+              Hệ thống thông tin quản lý (Management Information Systems)
+            </p>
+          </div>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div class="journey-col">
+          <h3 class="journey-col-title"
+              data-vi="Thành tích" data-en="Achievements">Thành tích</h3>
+
+          <div class="journey-entry">
+            <div class="journey-year">2026</div>
+            <h4 data-vi="Giải Nhất – SV_STARTUP VIII Quốc gia &amp; Cấp trường"
+                data-en="1st Prize – SV_STARTUP VIII National &amp; University Level">
+              Giải Nhất – SV_STARTUP VIII Quốc gia &amp; Cấp trường
+            </h4>
+            <p data-vi="Bằng khen của Bộ GD&amp;ĐT và ĐH Mở TP.HCM cho dự án EcoBack."
+               data-en="Certificate of Merit from the Ministry of Education and Training and HCMC Open University for EcoBack.">
+              Bằng khen của Bộ GD&amp;ĐT và ĐH Mở TP.HCM cho dự án EcoBack.
+            </p>
+          </div>
+
+          <div class="journey-entry">
+            <div class="journey-year">Oct 2026</div>
+            <h4>Digital Entrepreneurship Foundations — UEH</h4>
+            <p data-vi="Chương trình DS2S, ĐH Kinh tế TP.HCM phối hợp cùng GIZ &amp; BMZ (Đức)."
+               data-en="DS2S program by UEH in collaboration with GIZ and BMZ (Germany).">
+              Chương trình DS2S, ĐH Kinh tế TP.HCM phối hợp cùng GIZ &amp; BMZ (Đức).
+            </p>
+          </div>
+
+          <div class="journey-entry">
+            <div class="journey-year">2023–2026</div>
+            <h4 data-vi="Học bổng Khuyến khích Học tập (3 học kỳ)"
+                data-en="Academic Encouragement Scholarship (×3 Semesters)">
+              Học bổng Khuyến khích Học tập (3 học kỳ)
+            </h4>
+            <p data-vi="HK2 (2023–2024) · HK1 (2024–2025) · HK2 (2025–2026)"
+               data-en="Sem 2 (2023–2024) · Sem 1 (2024–2025) · Sem 2 (2025–2026)">
+              HK2 (2023–2024) · HK1 (2024–2025) · HK2 (2025–2026)
+            </p>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="journey-col">
+          <h3 class="journey-col-title"
+              data-vi="Trải nghiệm" data-en="Experience">Trải nghiệm</h3>
+
+          <div class="journey-entry">
+            <div class="journey-year">2025–2026</div>
+            <h4>EcoBack</h4>
+            <p data-vi="Phát triển sản phẩm công nghệ — web prototype với QR scanning, tích điểm, MongoDB Atlas."
+               data-en="Technology product development — web prototype with QR scanning, rewards, MongoDB Atlas.">
+              Phát triển sản phẩm công nghệ — web prototype với QR scanning, tích điểm, MongoDB Atlas.
+            </p>
+          </div>
+
+          <div class="journey-entry">
+            <div class="journey-year">Đang thực hiện</div>
+            <h4>FraudGT</h4>
+            <p data-vi="Nghiên cứu và thực nghiệm phát hiện gian lận giao dịch tài chính."
+               data-en="Research and experimentation on financial transaction fraud detection.">
+              Nghiên cứu và thực nghiệm phát hiện gian lận giao dịch tài chính.
+            </p>
+          </div>
+
+          <div class="journey-entry">
+            <div class="journey-year">Đang thực hiện</div>
+            <h4>MerchPilot</h4>
+            <p data-vi="Phân tích dữ liệu và phát triển giải pháp trong lĩnh vực thương mại điện tử."
+               data-en="Data analysis and solution development in e-commerce.">
+              Phân tích dữ liệu và phát triển giải pháp trong lĩnh vực thương mại điện tử.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 06. CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-container">
+      <div class="section-label"
+           data-vi="06 / Liên hệ" data-en="06 / Contact">06 / Liên hệ</div>
+      <h2 class="section-title"
+          data-vi="Kết nối nhé" data-en="Let's Connect">Kết nối nhé</h2>
+      <p class="section-sub"
+         data-vi="Mình luôn sẵn sàng kết nối, học hỏi và trao đổi về dữ liệu, công nghệ cũng như những cơ hội phát triển trong tương lai."
+         data-en="I'm always open to connecting, learning, and discussing data, technology, and future growth opportunities.">
+        Mình luôn sẵn sàng kết nối, học hỏi và trao đổi về dữ liệu, công nghệ cũng như những cơ hội phát triển trong tương lai.
       </p>
       <div class="contact-links">
-        <a href="mailto:hieunm.career@gmail.com" class="contact-btn">hieunm.career@gmail.com</a>
-        <a href="https://www.linkedin.com/in/hieunm-career/" target="_blank" class="contact-btn">LinkedIn</a>
-        <a href="https://github.com/mhiunguyen" target="_blank" class="contact-btn">GitHub</a>
+        <a href="mailto:hieunm.career@gmail.com" class="contact-btn">
+          hieunm.career@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/hieunm-career/" target="_blank" class="contact-btn">
+          LinkedIn
+        </a>
+        <a href="https://github.com/mhiunguyen" target="_blank" class="contact-btn">
+          GitHub
+        </a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Nguyen Minh Hieu · Ho Chi Minh City</p>
+    <p>© 2026 Nguyễn Minh Hiếu · Ho Chi Minh City</p>
   </footer>
 
   <script src="main.js"></script>
