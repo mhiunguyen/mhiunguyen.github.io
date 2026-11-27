@@ -1,16 +1,40 @@
 // =====================
-// LANG TOGGLE
+// LANG TOGGLE (English First)
 // =====================
 let currentLang = 'en';
 
 function setLang(lang) {
   currentLang = lang;
+  document.documentElement.lang = lang;
 
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+  const activeBtn = document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`);
+  if (activeBtn) activeBtn.classList.add('active');
 
   document.querySelectorAll('[data-en]').forEach(el => {
     el.textContent = el.dataset[lang] || el.dataset['en'];
+  });
+}
+
+// =====================
+// MOBILE NAV TOGGLE
+// =====================
+const navToggle = document.getElementById('nav-toggle');
+const navLinksEl = document.getElementById('nav-links');
+
+if (navToggle && navLinksEl) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinksEl.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.textContent = isOpen ? 'Close' : 'Menu';
+  });
+
+  navLinksEl.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinksEl.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.textContent = 'Menu';
+    });
   });
 }
 
@@ -23,7 +47,7 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add('visible');
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
 document.querySelectorAll('.section').forEach(el => observer.observe(el));
 
@@ -36,31 +60,18 @@ const navLinks = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop - 80) {
+    if (window.scrollY >= section.offsetTop - 90) {
       current = section.getAttribute('id');
     }
   });
   navLinks.forEach(link => {
-    link.style.color = link.getAttribute('href') === `#${current}` ? '#0a0a0a' : '';
+    const isActive = link.getAttribute('href') === `#${current}`;
+    link.classList.toggle('active', isActive);
   });
 });
 
 // =====================
-// SKILL BAR ANIMATE ON SCROLL
+// INIT
 // =====================
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.querySelectorAll('.skill-fill').forEach(bar => {
-        bar.style.animation = 'none';
-        void bar.offsetWidth; // reflow
-        bar.style.animation = 'fillBar 1.2s ease-out forwards';
-      });
-    }
-  });
-}, { threshold: 0.3 });
-
-document.querySelectorAll('.skills-grid') .forEach(el => skillObserver.observe(el));
-
-// Init: show hero section immediately
+setLang('en');
 document.querySelector('.hero') && document.querySelector('.hero').classList.add('visible');
